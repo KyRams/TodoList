@@ -7,8 +7,8 @@
 body {
   background-image: linear-gradient(
     100deg,
-    rgb(112, 112, 111),
-    rgb(128, 85, 45)
+    rgb(128, 85, 45),
+    rgb(112, 112, 111)
   );
   color: white;
   font-family: "Oswald", sans-serif;
@@ -40,4 +40,9 @@ form button {
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: rgb(128, 85, 45);
+  color: white;
 }
