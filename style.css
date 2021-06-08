@@ -46,3 +46,96 @@ form button:hover {
   background: rgb(128, 85, 45);
   color: white;
 }
+
+.todo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list{
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo{
+  margin: 0.5rem;
+  /* background: white; */
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.todo li{
+  flex: 1;
+}
+
+.trash-btn, .complete-btn{
+  background: orangered;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.complete-btn{
+  background:rgb(46, 223, 46);
+}
+
+.todo-item{
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash-alt, .fa-check-circle{
+  pointer-events: none;
+}
+
+.completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.shrink{
+  transform: scale(0, 0) rotate(360deg);
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+
+}
+
+.select{
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select{
+  color: rgb(128, 85, 45);
+  width: 10 rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select::after{
+  content: "\25BC";
+  position: absolute;
+  background:rgb(128, 85, 45);
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition:all 00.3s ease;
+}
+
+.select:hover::after{
+  background: white;
+  color:rgb(128, 85, 45)
+}
