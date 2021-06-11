@@ -12,6 +12,8 @@ todoButton.addEventListener('click', addTodo);
 todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("click", filterTodo);
 
+
+
 //Functions
 function addTodo(event){
     // Prevent form from submitting
@@ -138,3 +140,18 @@ function removeLocalTodos(todo){
     todos.splice(todos.indexOf(todoIndex), 1);
     localStorage.setItem("todos", JSON.stringify(todos));   
 }
+
+
+// //todo
+// //make this work
+// const navSlide = () =>{
+//     const navDropDown = document.querySelector('.nav-dropdown');
+//     const nav = document.querySelector('.nav-links');
+
+//     navDropDown.addEventListener('click', () =>{
+//         console.log("here");
+//         nav.classList.toggle('nav-active');
+//     });
+// }
+// navSlide();
+
